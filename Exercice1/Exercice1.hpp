@@ -3,15 +3,16 @@
  * @ Description: Exercice 1
  */
 
-//Problème:
-//Vous travaillez sur un projet de développement d'un logiciel de gestion de stocks pour une
-//entreprise de vente en ligne. Cette entreprise doit gérer un inventaire centralisé des produits
-//qu'elle vend sur plusieurs plateformes en ligne. Pour assurer la cohérence des données, il doit y
-//avoir une seule instance de la classe "StockManager" qui est partagée par différentes parties de l'application.
-
-//Comment pouvez-vous utiliser le design pattern Singleton pour garantir qu'il n'y a qu'une seule
-//instance de la classe "StockManager" à tout moment et que cette instance est partagée par toutes
-//les parties de l'application qui en ont besoin?
+// Problem:
+// You are working on a project to develop a stock management software
+// for an online selling company. This company needs to manage a centralized
+//  inventory of the products they sell on multiple online platforms.
+//  To ensure data consistency, there must be only one instance of the
+//  "StockManager" class that is shared by different parts of the application.
+//
+// How can you use the Singleton design pattern to ensure that there is only one 7
+// instance of the "StockManager" class at any time and that this instance is shared
+// by all parts of the application that need it?
 
 #include <iostream>
 #include <map>
@@ -51,9 +52,12 @@ private:
     static StockManager *instance;
     std::map<std::string, int> stock;
     StockManager() = default;
-    //Le constructeur d'un Singleton est en private (ou protected, selon le cas)
-    //pour empêcher la création d'instances de la classe à partir de l'extérieur
-    //de la classe
+    // The constructor of a Singleton is set to private (or protected, as appropriate)
+    // to prevent the creation of instances of the class from outside the class.
 };
 
 StockManager *StockManager::instance = nullptr;
+
+//Note: the singleton pattern is not thread-safe by default.
+//If you want to make it thread-safe, you can use the double-checked locking pattern.
+//See https://en.wikipedia.org/wiki/Double-checked_locking
