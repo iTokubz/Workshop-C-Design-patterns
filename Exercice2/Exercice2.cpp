@@ -1,3 +1,9 @@
+/**
+ * @ Author: iTokubz
+ * @ Description: Exercice 2
+ */
+
+
 #include <iostream>
 #include <vector>
 

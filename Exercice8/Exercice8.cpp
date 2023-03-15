@@ -1,3 +1,9 @@
+/**
+ * @ Author: itokubz
+ * @ Description: Exercice 8
+ */
+
+
 //It's one of the design patterns that once created, you can use it in a lot of different projects.
 //It's an template itrator that can iterate over any type of data.
 //It's a very useful design pattern because it allows you to iterate over any type of data without having to create a specific iterator for each type of data.

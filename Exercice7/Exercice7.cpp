@@ -1,10 +1,8 @@
 /**
- * @ Author: Your name
- * @ Create Time: 2023-03-14 23:10:06
- * @ Modified by: Your name
- * @ Modified time: 2023-03-14 23:20:48
- * @ Description:
+ * @ Author: iTokubz
+ * @ Description: Exercice 7
  */
+
 
 #include <iostream>
 
